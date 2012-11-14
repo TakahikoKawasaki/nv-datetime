@@ -12,10 +12,10 @@ for each Calendar field. For example, getYear() method exists.
 In addition, some format() and parse() methods are available.
 
 GregorianCalendar class has isLeapYear(int year) method, but it is
-not a static method for some reasons. On the other hand, GCalendar
-provides no-argument isLeapYear() instance method and
-isLeapYear(int year) as a static method. Some constructor variants,
-for example, GCalendar(Date), are provided, too.
+not a static method. On the other hand, GCalendar provides no-argument
+isLeapYear() instance method and isLeap(int year) as a static method.
+Some constructor variants, for example, GCalendar(Date), are provided,
+too.
 
 
 License
