@@ -39,8 +39,6 @@ Javadoc
 Maven
 -----
 
-    (Not yet ready)
-
     <dependency>
         <groupId>com.neovisionaries</groupId>
         <artifactId>nv-datetime</artifactId>
