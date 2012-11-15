@@ -1,3 +1,18 @@
+/*
+ * Copyright (C) 2012 Neo Visionaries Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 package com.neovisionaries.datetime;
 
 
@@ -1368,6 +1383,97 @@ public class GCalendar extends GregorianCalendar
         setMinute(0);
         setSecond(0);
         setMillisecond(0);
+
+        return this;
+    }
+
+
+    /**
+     * Change the time zone, but preserve the values of year, month
+     * dayOfMonth, hourOfDay, minute, second and millisecond.
+     *
+     * <p>
+     * The code snippet below:
+     * </p>
+     *
+     * <pre style="background-color: #EEEEEE; margin-left: 2em; margin-right: 2em; border: 1px solid black;">
+     * 
+     * import java.util.TimeZone;
+     * import com.neovisionaries.datetime.GCalendar;
+     *
+     * public class GCalTest
+     * {
+     *     public static void main(String[] args)
+     *     {
+     *         TimeZone GMT = TimeZone.getTimeZone("GMT");
+     *         TimeZone JST = TimeZone.getTimeZone("JST");
+     *         GCalendar cal;
+     *
+     *         <span style="color: darkgreen;">// Create an instance with a different time zone than GMT.</span>
+     *         cal = new GCalendar(JST);
+     *         print(cal);
+     *
+     *         <span style="color: darkgreen;">// Change the time zone to GMT, but preserve other fields.
+     *         //
+     *         // Year, month, ..., millisecond won't change, but
+     *         // timeInMillis will change.</span>
+     *         cal.changeTimeZoneOnly(GMT);
+     *         print(cal);
+     *
+     *         <span style="color: darkgreen;">// Create an instance with a different time zone than GMT.</span>
+     *         cal = new GCalendar(JST);
+     *         print(cal);
+     *
+     *         <span style="color: darkgreen;">// Change the time zone to GMT.
+     *         //
+     *         // timeInMillis won't change, but the hourOfDay field
+     *         // (and possibly others) will change.</span>
+     *         cal.setTimeZone(GMT);
+     *         print(cal);
+     *     }
+     *
+     *
+     *     private static void print(GCalendar cal)
+     *     {
+     *         System.out.format("%04d/%02d/%02d %02d:%02d:%02d " +
+     *                           "(offset = %8d, timeInMillis = %d)\n",
+     *             cal.getYear(), cal.getMonth() + 1, cal.getDayOfMonth(),
+     *             cal.getHourOfDay(), cal.getMinute(), cal.getSecond(),
+     *             cal.getZoneOffset(), cal.getTimeInMillis());
+     *     }
+     * }
+     * </pre>
+     *
+     * <p>
+     * will generate output like the following.
+     * </p>
+     *
+     * <pre>
+     * 2012/11/15 17:45:47 (offset = 32400000, timeInMillis = 1352969147188)
+     * 2012/11/15 17:45:47 (offset =        0, timeInMillis = 1353001547188)
+     * 2012/11/15 17:45:47 (offset = 32400000, timeInMillis = 1352969147206)
+     * 2012/11/15 08:45:47 (offset =        0, timeInMillis = 1352969147206)
+     * </pre>
+     *
+     * @param timeZone
+     *
+     * @return
+     *         <code>this</code> object.
+     */
+    public GCalendar changeTimeZoneOnly(TimeZone timeZone)
+    {
+        // @formatter:off
+        int year        = getYear();
+        int month       = getMonth();
+        int dayOfMonth  = getDayOfMonth();
+        int hourOfDay   = getHourOfDay();
+        int minute      = getMinute();
+        int second      = getSecond();
+        int millisecond = getMillisecond();
+        // @formatter:on
+
+        setTimeZone(timeZone);
+        setInternal(year, month, dayOfMonth, hourOfDay, minute, second, millisecond);
 
         return this;
     }
