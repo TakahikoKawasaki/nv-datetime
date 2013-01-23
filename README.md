@@ -33,7 +33,7 @@ Download
 Javadoc
 -------
 
-[com.neovisionaris.datetime javadoc](http://TakahikoKawasaki.github.com/nv-datetime/)
+[nv-datetime javadoc](http://TakahikoKawasaki.github.com/nv-datetime/)
 
 
 Maven
@@ -42,7 +42,7 @@ Maven
     <dependency>
         <groupId>com.neovisionaries</groupId>
         <artifactId>nv-datetime</artifactId>
-        <version>1.0</version>
+        <version>1.1</version>
     </depenency>
 
 
