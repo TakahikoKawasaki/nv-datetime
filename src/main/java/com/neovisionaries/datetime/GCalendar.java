@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2012 Neo Visionaries Inc.
+ * Copyright (C) 2012-2013 Neo Visionaries Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -182,7 +182,8 @@ public class GCalendar extends GregorianCalendar
      * Equivalent to <code>{@link #set(int, int) set}({@link
      * Calendar#AM_PM AM_PM}, {@link Calendar#AM AM})</code>.
      *
-     * @return <code>this</code> object.
+     * @return
+     *         {@code this} object.
      */
     public GCalendar setAM()
     {
@@ -196,7 +197,8 @@ public class GCalendar extends GregorianCalendar
      * Equivalent to <code>{@link #set(int, int) set}({@link
      * Calendar#AM_PM AM_PM}, {@link Calendar#PM PM})</code>.
      *
-     * @return <code>this</code> object.
+     * @return
+     *         {@code this} object.
      */
     public GCalendar setPM()
     {
@@ -220,7 +222,8 @@ public class GCalendar extends GregorianCalendar
      * Equivalent to <code>{@link #set(int, int) set}({@link
      * Calendar#DATE DATE}, date)</code>.
      *
-     * @return <code>this</code> object.
+     * @return
+     *         {@code this} object.
      */
     public GCalendar setDate(int date)
     {
@@ -234,7 +237,8 @@ public class GCalendar extends GregorianCalendar
      * Equivalent to <code>{@link #add(int, int) add}({@link
      * Calendar#DATE DATE}, date)</code>.
      *
-     * @return <code>this</code> object.
+     * @return
+     *         {@code this} object.
      */
     public GCalendar addDate(int date)
     {
@@ -248,7 +252,8 @@ public class GCalendar extends GregorianCalendar
      * Equivalent to <code>{@link #roll(int, int) roll}({@link
      * Calendar#DATE DATE}, date)</code>.
      *
-     * @return <code>this</code> object.
+     * @return
+     *         {@code this} object.
      */
     public GCalendar rollDate(int date)
     {
@@ -272,7 +277,8 @@ public class GCalendar extends GregorianCalendar
      * Equivalent to <code>{@link #set(int, int) set}({@link
      * Calendar#DAY_OF_MONTH DAY_OF_MONTH}, dayOfMonth)</code>.
      *
-     * @return <code>this</code> object.
+     * @return
+     *         {@code this} object.
      */
     public GCalendar setDayOfMonth(int dayOfMonth)
     {
@@ -286,7 +292,8 @@ public class GCalendar extends GregorianCalendar
      * Equivalent to <code>{@link #add(int, int) add}({@link
      * Calendar#DAY_OF_MONTH DAY_OF_MONTH}, dayOfMonth)</code>.
      *
-     * @return <code>this</code> object.
+     * @return
+     *         {@code this} object.
      */
     public GCalendar addDayOfMonth(int dayOfMonth)
     {
@@ -300,7 +307,8 @@ public class GCalendar extends GregorianCalendar
      * Equivalent to <code>{@link #roll(int, int) roll}({@link
      * Calendar#DAY_OF_MONTH DAY_OF_MONTH}, dayOfMonth)</code>.
      *
-     * @return <code>this</code> object.
+     * @return
+     *         {@code this} object.
      */
     public GCalendar rollDayOfMonth(int dayOfMonth)
     {
@@ -324,7 +332,8 @@ public class GCalendar extends GregorianCalendar
      * Equivalent to <code>{@link #set(int, int) set}({@link
      * Calendar#DAY_OF_WEEK DAY_OF_WEEK}, dayOfWeek)</code>.
      *
-     * @return <code>this</code> object.
+     * @return
+     *         {@code this} object.
      */
     public GCalendar setDayOfWeek(int dayOfWeek)
     {
@@ -338,7 +347,8 @@ public class GCalendar extends GregorianCalendar
      * Equivalent to <code>{@link #add(int, int) add}({@link
      * Calendar#DAY_OF_WEEK DAY_OF_WEEK}, dayOfWeek)</code>.
      *
-     * @return <code>this</code> object.
+     * @return
+     *         {@code this} object.
      */
     public GCalendar addDayOfWeek(int dayOfWeek)
     {
@@ -352,7 +362,8 @@ public class GCalendar extends GregorianCalendar
      * Equivalent to <code>{@link #roll(int, int) roll}({@link
      * Calendar#DAY_OF_WEEK DAY_OF_WEEK}, dayOfWeek)</code>.
      *
-     * @return <code>this</code> object.
+     * @return
+     *         {@code this} object.
      */
     public GCalendar rollDayOfWeek(int dayOfWeek)
     {
@@ -376,7 +387,8 @@ public class GCalendar extends GregorianCalendar
      * Equivalent to <code>{@link #set(int, int) set}({@link
      * Calendar#DAY_OF_WEEK_IN_MONTH DAY_OF_WEEK_IN_MONTH}, dayOfWeekInMonth)</code>.
      *
-     * @return <code>this</code> object.
+     * @return
+     *         {@code this} object.
      */
     public GCalendar setDayOfWeekInMonth(int dayOfWeekInMonth)
     {
@@ -390,7 +402,8 @@ public class GCalendar extends GregorianCalendar
      * Equivalent to <code>{@link #add(int, int) add}({@link
      * Calendar#DAY_OF_WEEK_IN_MONTH DAY_OF_WEEK_IN_MONTH}, dayOfWeekInMonth)</code>.
      *
-     * @return <code>this</code> object.
+     * @return
+     *         {@code this} object.
      */
     public GCalendar addDayOfWeekInMonth(int dayOfWeekInMonth)
     {
@@ -428,7 +441,8 @@ public class GCalendar extends GregorianCalendar
      * Equivalent to <code>{@link #set(int, int) set}({@link
      * Calendar#DAY_OF_YEAR DAY_OF_YEAR}, year)</code>.
      *
-     * @return <code>this</code> object.
+     * @return
+     *         {@code this} object.
      */
     public GCalendar setDayOfYear(int dayOfYear)
     {
@@ -442,7 +456,8 @@ public class GCalendar extends GregorianCalendar
      * Equivalent to <code>{@link #add(int, int) add}({@link
      * Calendar#DAY_OF_YEAR DAY_OF_YEAR}, year)</code>.
      *
-     * @return <code>this</code> object.
+     * @return
+     *         {@code this} object.
      */
     public GCalendar addDayOfYear(int dayOfYear)
     {
@@ -456,7 +471,8 @@ public class GCalendar extends GregorianCalendar
      * Equivalent to <code>{@link #roll(int, int) roll}({@link
      * Calendar#DAY_OF_YEAR DAY_OF_YEAR}, year)</code>.
      *
-     * @return <code>this</code> object.
+     * @return
+     *         {@code this} object.
      */
     public GCalendar rollDayOfYear(int dayOfYear)
     {
@@ -480,7 +496,8 @@ public class GCalendar extends GregorianCalendar
      * Equivalent to <code>{@link #set(int, int) set}({@link
      * Calendar#DST_OFFSET DST_OFFSET}, dstOffset)</code>.
      *
-     * @return <code>this</code> object.
+     * @return
+     *         {@code this} object.
      */
     public GCalendar setDstOffset(int dstOffset)
     {
@@ -494,7 +511,8 @@ public class GCalendar extends GregorianCalendar
      * Equivalent to <code>{@link #add(int, int) add}({@link
      * Calendar#DST_OFFSET DST_OFFSET}, dstOffset)</code>.
      *
-     * @return <code>this</code> object.
+     * @return
+     *         {@code this} object.
      */
     public GCalendar addDstOffset(int dstOffset)
     {
@@ -508,7 +526,8 @@ public class GCalendar extends GregorianCalendar
      * Equivalent to <code>{@link #roll(int, int) roll}({@link
      * Calendar#DST_OFFSET DST_OFFSET}, dstOffset)</code>.
      *
-     * @return <code>this</code> object.
+     * @return
+     *         {@code this} object.
      */
     public GCalendar rollDstOffset(int dstOffset)
     {
@@ -552,7 +571,8 @@ public class GCalendar extends GregorianCalendar
      * Equivalent to <code>{@link #set(int, int) set}({@link
      * Calendar#ERA ERA}, era)</code>.
      *
-     * @return <code>this</code> object.
+     * @return
+     *         {@code this} object.
      */
     public GCalendar setEra(int era)
     {
@@ -576,7 +596,8 @@ public class GCalendar extends GregorianCalendar
      * Equivalent to <code>{@link #set(int, int) set}({@link
      * Calendar#HOUR HOUR}, hour)</code>.
      *
-     * @return <code>this</code> object.
+     * @return
+     *         {@code this} object.
      */
     public GCalendar setHour(int hour)
     {
@@ -590,7 +611,8 @@ public class GCalendar extends GregorianCalendar
      * Equivalent to <code>{@link #add(int, int) add}({@link
      * Calendar#HOUR HOUR}, hour)</code>.
      *
-     * @return <code>this</code> object.
+     * @return
+     *         {@code this} object.
      */
     public GCalendar addHour(int hour)
     {
@@ -604,7 +626,8 @@ public class GCalendar extends GregorianCalendar
      * Equivalent to <code>{@link #roll(int, int) roll}({@link
      * Calendar#HOUR HOUR}, hour)</code>.
      *
-     * @return <code>this</code> object.
+     * @return
+     *         {@code this} object.
      */
     public GCalendar rollHour(int hour)
     {
@@ -628,7 +651,8 @@ public class GCalendar extends GregorianCalendar
      * Equivalent to <code>{@link #set(int, int) set}({@link
      * Calendar#HOUR_OF_DAY HOUR_OF_DAY}, hourOfDay)</code>.
      *
-     * @return <code>this</code> object.
+     * @return
+     *         {@code this} object.
      */
     public GCalendar setHourOfDay(int hourOfDay)
     {
@@ -656,7 +680,8 @@ public class GCalendar extends GregorianCalendar
      * Equivalent to <code>{@link #roll(int, int) roll}({@link
      * Calendar#HOUR_OF_DAY HOUR_OF_DAY}, hourOfDay)</code>.
      *
-     * @return <code>this</code> object.
+     * @return
+     *         {@code this} object.
      */
     public GCalendar rollHourOfDay(int hourOfDay)
     {
@@ -680,7 +705,8 @@ public class GCalendar extends GregorianCalendar
      * Equivalent to <code>{@link #set(int, int) set}({@link
      * Calendar#MILLISECOND MILLISECOND}, millisecond)</code>.
      *
-     * @return <code>this</code> object.
+     * @return
+     *         {@code this} object.
      */
     public GCalendar setMillisecond(int millisecond)
     {
@@ -694,7 +720,8 @@ public class GCalendar extends GregorianCalendar
      * Equivalent to <code>{@link #add(int, int) add}({@link
      * Calendar#MILLISECOND MILLISECOND}, millisecond)</code>.
      *
-     * @return <code>this</code> object.
+     * @return
+     *         {@code this} object.
      */
     public GCalendar addMillisecond(int millisecond)
     {
@@ -708,7 +735,8 @@ public class GCalendar extends GregorianCalendar
      * Equivalent to <code>{@link #roll(int, int) roll}({@link
      * Calendar#MILLISECOND MILLISECOND}, millisecond)</code>.
      *
-     * @return <code>this</code> object.
+     * @return
+     *         {@code this} object.
      */
     public GCalendar rollMillisecond(int millisecond)
     {
@@ -784,7 +812,8 @@ public class GCalendar extends GregorianCalendar
      * Equivalent to <code>{@link #set(int, int) set}({@link
      * Calendar#MONTH MONTH}, month)</code>.
      *
-     * @return <code>this</code> object.
+     * @return
+     *         {@code this} object.
      */
     public GCalendar setMonth(int month)
     {
@@ -798,7 +827,8 @@ public class GCalendar extends GregorianCalendar
      * Equivalent to <code>{@link #add(int, int) add}({@link
      * Calendar#MONTH MONTH}, month)</code>.
      *
-     * @return <code>this</code> object.
+     * @return
+     *         {@code this} object.
      */
     public GCalendar addMonth(int month)
     {
@@ -812,7 +842,8 @@ public class GCalendar extends GregorianCalendar
      * Equivalent to <code>{@link #roll(int, int) roll}({@link
      * Calendar#MONTH MONTH}, month)</code>.
      *
-     * @return <code>this</code> object.
+     * @return
+     *         {@code this} object.
      */
     public GCalendar rollMonth(int month)
     {
@@ -836,7 +867,8 @@ public class GCalendar extends GregorianCalendar
      * Equivalent to <code>{@link #set(int, int) set}({@link
      * Calendar#SECOND SECOND}, second)</code>.
      *
-     * @return <code>this</code> object.
+     * @return
+     *         {@code this} object.
      */
     public GCalendar setSecond(int second)
     {
@@ -850,7 +882,8 @@ public class GCalendar extends GregorianCalendar
      * Equivalent to <code>{@link #add(int, int) add}({@link
      * Calendar#SECOND SECOND}, second)</code>.
      *
-     * @return <code>this</code> object.
+     * @return
+     *         {@code this} object.
      */
     public GCalendar addSecond(int second)
     {
@@ -888,7 +921,8 @@ public class GCalendar extends GregorianCalendar
      * Equivalent to <code>{@link #set(int, int) set}({@link
      * Calendar#WEEK_OF_MONTH WEEK_OF_MONTH}, weekOfMonth)</code>.
      *
-     * @return <code>this</code> object.
+     * @return
+     *         {@code this} object.
      */
     public GCalendar setWeekOfMonth(int weekOfMonth)
     {
@@ -902,7 +936,8 @@ public class GCalendar extends GregorianCalendar
      * Equivalent to <code>{@link #add(int, int) add}({@link
      * Calendar#WEEK_OF_MONTH WEEK_OF_MONTH}, weekOfMonth)</code>.
      *
-     * @return <code>this</code> object.
+     * @return
+     *         {@code this} object.
      */
     public GCalendar addWeekOfMonth(int weekOfMonth)
     {
@@ -916,7 +951,8 @@ public class GCalendar extends GregorianCalendar
      * Equivalent to <code>{@link #roll(int, int) roll}({@link
      * Calendar#WEEK_OF_MONTH WEEK_OF_MONTH}, weekOfMonth)</code>.
      *
-     * @return <code>this</code> object.
+     * @return
+     *         {@code this} object.
      */
     public GCalendar rollWeekOfMonth(int weekOfMonth)
     {
@@ -940,7 +976,8 @@ public class GCalendar extends GregorianCalendar
      * Equivalent to <code>{@link #set(int, int) set}({@link
      * Calendar#WEEK_OF_YEAR WEEK_OF_YEAR}, weekOfYear)</code>.
      *
-     * @return <code>this</code> object.
+     * @return
+     *         {@code this} object.
      */
     public GCalendar setWeekOfYear(int weekOfYear)
     {
@@ -954,7 +991,8 @@ public class GCalendar extends GregorianCalendar
      * Equivalent to <code>{@link #add(int, int) add}({@link
      * Calendar#WEEK_OF_YEAR WEEK_OF_YEAR}, weekOfYear)</code>.
      *
-     * @return <code>this</code> object.
+     * @return
+     *         {@code this} object.
      */
     public GCalendar addWeekOfYear(int weekOfYear)
     {
@@ -992,7 +1030,8 @@ public class GCalendar extends GregorianCalendar
      * Equivalent to <code>{@link #set(int, int) set}({@link
      * Calendar#YEAR YEAR}, year)</code>.
      *
-     * @return <code>this</code> object.
+     * @return
+     *         {@code this} object.
      */
     public GCalendar setYear(int year)
     {
@@ -1006,7 +1045,8 @@ public class GCalendar extends GregorianCalendar
      * Equivalent to <code>{@link #add(int, int) add}({@link
      * Calendar#YEAR YEAR}, year)</code>.
      *
-     * @return <code>this</code> object.
+     * @return
+     *         {@code this} object.
      */
     public GCalendar addYear(int year)
     {
@@ -1020,7 +1060,8 @@ public class GCalendar extends GregorianCalendar
      * Equivalent to <code>{@link #roll(int, int) roll}({@link
      * Calendar#YEAR YEAR}, year)</code>.
      *
-     * @return <code>this</code> object.
+     * @return
+     *         {@code this} object.
      */
     public GCalendar rollYear(int year)
     {
@@ -1044,7 +1085,8 @@ public class GCalendar extends GregorianCalendar
      * Equivalent to <code>{@link #set(int, int) set}({@link
      * Calendar#ZONE_OFFSET ZONE_OFFSET}, zoneOffset)</code>.
      *
-     * @return <code>this</code> object.
+     * @return
+     *         {@code this} object.
      */
     public GCalendar setZoneOffset(int zoneOffset)
     {
@@ -1058,7 +1100,8 @@ public class GCalendar extends GregorianCalendar
      * Equivalent to <code>{@link #add(int, int) add}({@link
      * Calendar#ZONE_OFFSET ZONE_OFFSET}, zoneOffset)</code>.
      *
-     * @return <code>this</code> object.
+     * @return
+     *         {@code this} object.
      */
     public GCalendar addZoneOffset(int zoneOffset)
     {
@@ -1072,7 +1115,8 @@ public class GCalendar extends GregorianCalendar
      * Equivalent to <code>{@link #roll(int, int) roll}({@link
      * Calendar#ZONE_OFFSET ZONE_OFFSET}, zoneOffset)</code>.
      *
-     * @return <code>this</code> object.
+     * @return
+     *         {@code this} object.
      */
     public GCalendar rollZoneOffset(int zoneOffset)
     {
@@ -1098,9 +1142,16 @@ public class GCalendar extends GregorianCalendar
      * Check if the given year is a leap year.
      * The implementation does the following.
      *
-     * <pre style="background-color: #EEEEEE; margin-left: 2em; margin-right: 2em; border: 1px solid black;">
+     * <style type="text/css">
+     * span.keyword { color: purple; font-weight: bold; }
+     * span.comment { color: green; }
+     * span.string  { color: blue; }
+     * pre.code { background-color: #EEEEEE; margin-left: 2em; margin-right: 2em; border: 1px solid black; }
+     * </style>
      *
-     * return new {@link GCalendar#GCalendar() GCalendar()}.{@link #setYear(int)
+     * <pre class="code">
+     *
+     * <span class="keyword">return new</span> {@link GCalendar#GCalendar() GCalendar()}.{@link #setYear(int)
      * setYear}(year).{@link #isLeapYear()};
      * </pre>
      *
@@ -1119,9 +1170,16 @@ public class GCalendar extends GregorianCalendar
      * Format the given calendar object using the given format.
      * The implementation does the following.
      *
-     * <pre style="background-color: #EEEEEE; margin-left: 2em; margin-right: 2em; border: 1px solid black;">
+     * <style type="text/css">
+     * span.keyword { color: purple; font-weight: bold; }
+     * span.comment { color: green; }
+     * span.string  { color: blue; }
+     * pre.code { background-color: #EEEEEE; margin-left: 2em; margin-right: 2em; border: 1px solid black; }
+     * </style>
      *
-     * return format.{@link DateFormat#format(Date) format}(calendar.{@link
+     * <pre class="code">
+     *
+     * <span class="keyword">return</span> format.{@link DateFormat#format(Date) format}(calendar.{@link
      * Calendar#getTime() getTime()});
      * </pre>
      */
@@ -1135,9 +1193,17 @@ public class GCalendar extends GregorianCalendar
      * Format the given calendar object using the given format.
      * The implementation does the following.
      *
-     * <pre style="background-color: #EEEEEE; margin-left: 2em; margin-right: 2em; border: 1px solid black;">
+     * <style type="text/css">
+     * span.keyword { color: purple; font-weight: bold; }
+     * span.comment { color: green; }
+     * span.string  { color: blue; }
+     * pre.code { background-color: #EEEEEE; margin-left: 2em; margin-right: 2em; border: 1px solid black; }
+     * </style>
      *
-     * return {@link #format(DateFormat, Calendar) format}(new {@link
+     * <pre class="code">
+     *
+     * <span class="keyword">return</span> {@link #format(DateFormat, Calendar)
+     * format}(<span class="keyword">new</span> {@link
      * SimpleDateFormat#SimpleDateFormat(String) SimpleDateFormat}(format), calendar);
      * </pre>
      */
@@ -1151,9 +1217,16 @@ public class GCalendar extends GregorianCalendar
      * Format <code>this</code> calendar object using the given format.
      * The implementation does the following.
      *
-     * <pre style="background-color: #EEEEEE; margin-left: 2em; margin-right: 2em; border: 1px solid black;">
+     * <style type="text/css">
+     * span.keyword { color: purple; font-weight: bold; }
+     * span.comment { color: green; }
+     * span.string  { color: blue; }
+     * pre.code { background-color: #EEEEEE; margin-left: 2em; margin-right: 2em; border: 1px solid black; }
+     * </style>
      *
-     * return {@link #format(DateFormat, Calendar) format}(format, this);
+     * <pre class="code">
+     *
+     * <span class="keyword">return</span> {@link #format(DateFormat, Calendar) format}(format, this);
      * </pre>
      */
     public String format(DateFormat format)
@@ -1166,9 +1239,16 @@ public class GCalendar extends GregorianCalendar
      * Format <code>this</code> calendar object using the given format.
      * The implementation does the following.
      *
-     * <pre style="background-color: #EEEEEE; margin-left: 2em; margin-right: 2em; border: 1px solid black;">
+     * <style type="text/css">
+     * span.keyword { color: purple; font-weight: bold; }
+     * span.comment { color: green; }
+     * span.string  { color: blue; }
+     * pre.code { background-color: #EEEEEE; margin-left: 2em; margin-right: 2em; border: 1px solid black; }
+     * </style>
      *
-     * return {@link #format(String, Calendar) format}(format, this);
+     * <pre class="code">
+     *
+     * <span class="keyword">return</span> {@link #format(String, Calendar) format}(format, this);
      * </pre>
      */
     public String format(String format)
@@ -1181,9 +1261,16 @@ public class GCalendar extends GregorianCalendar
      * Format the given calendar object using the given format.
      * The implementation does the following.
      *
-     * <pre style="background-color: #EEEEEE; margin-left: 2em; margin-right: 2em; border: 1px solid black;">
+     * <style type="text/css">
+     * span.keyword { color: purple; font-weight: bold; }
+     * span.comment { color: green; }
+     * span.string  { color: blue; }
+     * pre.code { background-color: #EEEEEE; margin-left: 2em; margin-right: 2em; border: 1px solid black; }
+     * </style>
      *
-     * return format.{@link DateFormat#format(Date, StringBuffer, FieldPosition)
+     * <pre class="code">
+     *
+     * <span class="keyword">return</span> format.{@link DateFormat#format(Date, StringBuffer, FieldPosition)
      * format}(calendar.{@link Calendar#getTime() getTime()}, toAppendTo, position);
      * </pre>
      */
@@ -1197,10 +1284,17 @@ public class GCalendar extends GregorianCalendar
      * Format the given calendar object using the given format.
      * The implementation does the following.
      *
-     * <pre style="background-color: #EEEEEE; margin-left: 2em; margin-right: 2em; border: 1px solid black;">
+     * <style type="text/css">
+     * span.keyword { color: purple; font-weight: bold; }
+     * span.comment { color: green; }
+     * span.string  { color: blue; }
+     * pre.code { background-color: #EEEEEE; margin-left: 2em; margin-right: 2em; border: 1px solid black; }
+     * </style>
      *
-     * return {@link #format(DateFormat, Calendar, StringBuffer, FieldPosition)
-     * format}(new {@link SimpleDateFormat#SimpleDateFormat(String)
+     * <pre class="code">
+     *
+     * <span class="keyword">return</span> {@link #format(DateFormat, Calendar, StringBuffer, FieldPosition)
+     * format}(<span class="keyword">new</span> {@link SimpleDateFormat#SimpleDateFormat(String)
      * SimpleDateFormat}(format), calendar, toAppendTo, position);
      * </pre>
      */
@@ -1214,9 +1308,16 @@ public class GCalendar extends GregorianCalendar
      * Format <code>this</code> calendar object using the given format.
      * The implementation does the following.
      *
-     * <pre style="background-color: #EEEEEE; margin-left: 2em; margin-right: 2em; border: 1px solid black;">
+     * <style type="text/css">
+     * span.keyword { color: purple; font-weight: bold; }
+     * span.comment { color: green; }
+     * span.string  { color: blue; }
+     * pre.code { background-color: #EEEEEE; margin-left: 2em; margin-right: 2em; border: 1px solid black; }
+     * </style>
      *
-     * return {@link #format(DateFormat, Calendar, StringBuffer, FieldPosition)
+     * <pre class="code">
+     *
+     * <span class="keyword">return</span> {@link #format(DateFormat, Calendar, StringBuffer, FieldPosition)
      * format}(format, this, toAppendTo, position);
      * </pre>
      */
@@ -1230,9 +1331,16 @@ public class GCalendar extends GregorianCalendar
      * Format <code>this</code> calendar object using the given format.
      * The implementation does the following.
      *
-     * <pre style="background-color: #EEEEEE; margin-left: 2em; margin-right: 2em; border: 1px solid black;">
+     * <style type="text/css">
+     * span.keyword { color: purple; font-weight: bold; }
+     * span.comment { color: green; }
+     * span.string  { color: blue; }
+     * pre.code { background-color: #EEEEEE; margin-left: 2em; margin-right: 2em; border: 1px solid black; }
+     * </style>
      *
-     * return {@link #format(String, Calendar, StringBuffer, FieldPosition)
+     * <pre class="code">
+     *
+     * <span class="keyword">return</span> {@link #format(String, Calendar, StringBuffer, FieldPosition)
      * format}(format, this, toAppendTo, position);
      * </pre>
      */
@@ -1246,9 +1354,16 @@ public class GCalendar extends GregorianCalendar
      * Parse the given string using the given format.
      * The implementation does the following.
      *
-     * <pre style="background-color: #EEEEEE; margin-left: 2em; margin-right: 2em; border: 1px solid black;">
+     * <style type="text/css">
+     * span.keyword { color: purple; font-weight: bold; }
+     * span.comment { color: green; }
+     * span.string  { color: blue; }
+     * pre.code { background-color: #EEEEEE; margin-left: 2em; margin-right: 2em; border: 1px solid black; }
+     * </style>
      *
-     * return new {@link GCalendar#GCalendar(Date) GCalendar}(format.{@link
+     * <pre class="code">
+     *
+     * <span class="keyword">return new</span> {@link GCalendar#GCalendar(Date) GCalendar}(format.{@link
      * DateFormat#parse(String) parse}(source));
      * </pre>
      */
@@ -1262,9 +1377,16 @@ public class GCalendar extends GregorianCalendar
      * Parse the given string using the given format.
      * The implementation does the following.
      *
-     * <pre style="background-color: #EEEEEE; margin-left: 2em; margin-right: 2em; border: 1px solid black;">
+     * <style type="text/css">
+     * span.keyword { color: purple; font-weight: bold; }
+     * span.comment { color: green; }
+     * span.string  { color: blue; }
+     * pre.code { background-color: #EEEEEE; margin-left: 2em; margin-right: 2em; border: 1px solid black; }
+     * </style>
      *
-     * return {@link #parse(DateFormat, String) parse}(new {@link
+     * <pre class="code">
+     *
+     * <span class="keyword">return</span> {@link #parse(DateFormat, String) parse}(<span class="keyword">new</span> {@link
      * SimpleDateFormat#SimpleDateFormat(String) SimpleDateFormat}(format), source);
      * </pre>
      */
@@ -1300,10 +1422,17 @@ public class GCalendar extends GregorianCalendar
      * Parse the given string using the given format.
      * The implementation does the following.
      *
-     * <pre style="background-color: #EEEEEE; margin-left: 2em; margin-right: 2em; border: 1px solid black;">
+     * <style type="text/css">
+     * span.keyword { color: purple; font-weight: bold; }
+     * span.comment { color: green; }
+     * span.string  { color: blue; }
+     * pre.code { background-color: #EEEEEE; margin-left: 2em; margin-right: 2em; border: 1px solid black; }
+     * </style>
      *
-     * return {@link #parse(DateFormat, String, ParsePosition)
-     * parse}(new {@link SimpleDateFormat#SimpleDateFormat(String)
+     * <pre class="code">
+     *
+     * <span class="keyword">return</span> {@link #parse(DateFormat, String, ParsePosition)
+     * parse}(<span class="keyword">new</span> {@link SimpleDateFormat#SimpleDateFormat(String)
      * SimpleDateFormat}(format), source, position);
      * </pre>
      */
@@ -1317,7 +1446,7 @@ public class GCalendar extends GregorianCalendar
      * Set timezone, year, month, ..., millisecond at a time.
      *
      * @return
-     *         <code>this</code> object.
+      *         {@code this} object.
      */
     public GCalendar set(TimeZone timeZone, int year, int month, int dayOfMonth, int hourOfDay, int minute, int second, int millisecond)
     {
@@ -1332,7 +1461,7 @@ public class GCalendar extends GregorianCalendar
      * Set year, month, ..., millisecond at a time.
      *
      * @return
-     *         <code>this</code> object.
+     *         {@code this} object.
      */
     public GCalendar set(int year, int month, int dayOfMonth, int hourOfDay, int minute, int second, int millisecond)
     {
@@ -1358,7 +1487,7 @@ public class GCalendar extends GregorianCalendar
      * Set 0 to hourOfDay field, minute, second and millisecond fields.
      *
      * @return
-     *         <code>this</code> object.
+     *         {@code this} object.
      */
     public GCalendar setMidnight()
     {
@@ -1375,7 +1504,7 @@ public class GCalendar extends GregorianCalendar
      * Set 12 to hourOfDay field, and set 0 to minute, second and millisecond fields.
      *
      * @return
-     *         <code>this</code> object.
+     *         {@code this} object.
      */
     public GCalendar setNoon()
     {
@@ -1396,35 +1525,42 @@ public class GCalendar extends GregorianCalendar
      * The code snippet below:
      * </p>
      *
-     * <pre style="background-color: #EEEEEE; margin-left: 2em; margin-right: 2em; border: 1px solid black;">
-     * 
-     * import java.util.TimeZone;
-     * import com.neovisionaries.datetime.GCalendar;
+     * <style type="text/css">
+     * span.keyword { color: purple; font-weight: bold; }
+     * span.comment { color: green; }
+     * span.string  { color: blue; }
+     * pre.code { background-color: #EEEEEE; margin-left: 2em; margin-right: 2em; border: 1px solid black; }
+     * </style>
      *
-     * public class GCalTest
+     * <pre class="code">
+     * 
+     * <span class="keyword">import</span> java.util.TimeZone;
+     * <span class="keyword">import</span> com.neovisionaries.datetime.GCalendar;
+     *
+     * <span class="keyword">public class</span> GCalTest
      * {
-     *     public static void main(String[] args)
+     *     <span class="keyword">public static void</span> main(String[] args)
      *     {
-     *         TimeZone GMT = TimeZone.getTimeZone("GMT");
-     *         TimeZone JST = TimeZone.getTimeZone("JST");
+     *         TimeZone GMT = TimeZone.getTimeZone(<span class="string">"GMT"</span>);
+     *         TimeZone JST = TimeZone.getTimeZone(<span class="string">"JST"</span>);
      *         GCalendar cal;
      *
-     *         <span style="color: darkgreen;">// Create an instance with a different time zone than GMT.</span>
-     *         cal = new GCalendar(JST);
+     *         <span class="comment">// Create an instance with a different time zone than GMT.</span>
+     *         cal = <span class="keyword">new</span> GCalendar(JST);
      *         print(cal);
      *
-     *         <span style="color: darkgreen;">// Change the time zone to GMT, but preserve other fields.
+     *         <span class="comment">// Change the time zone to GMT, but preserve other fields.
      *         //
      *         // Year, month, ..., millisecond won't change, but
      *         // timeInMillis will change.</span>
      *         cal.changeTimeZoneOnly(GMT);
      *         print(cal);
      *
-     *         <span style="color: darkgreen;">// Create an instance with a different time zone than GMT.</span>
-     *         cal = new GCalendar(JST);
+     *         <span class="comment">// Create an instance with a different time zone than GMT.</span>
+     *         cal = <span class="keyword">new</span> GCalendar(JST);
      *         print(cal);
      *
-     *         <span style="color: darkgreen;">// Change the time zone to GMT.
+     *         <span class="comment">// Change the time zone to GMT.
      *         //
      *         // timeInMillis won't change, but the hourOfDay field
      *         // (and possibly others) will change.</span>
@@ -1433,10 +1569,10 @@ public class GCalendar extends GregorianCalendar
      *     }
      *
      *
-     *     private static void print(GCalendar cal)
+     *     <span class="keyword">private static void</span> print(GCalendar cal)
      *     {
-     *         System.out.format("%04d/%02d/%02d %02d:%02d:%02d " +
-     *                           "(offset = %8d, timeInMillis = %d)\n",
+     *         System.out.format(<span class="string">"%04d/%02d/%02d %02d:%02d:%02d "</span> +
+     *                           <span class="string">"(offset = %8d, timeInMillis = %d)\n"</span>,
      *             cal.getYear(), cal.getMonth() + 1, cal.getDayOfMonth(),
      *             cal.getHourOfDay(), cal.getMinute(), cal.getSecond(),
      *             cal.getZoneOffset(), cal.getTimeInMillis());
@@ -1458,7 +1594,7 @@ public class GCalendar extends GregorianCalendar
      * @param timeZone
      *
      * @return
-     *         <code>this</code> object.
+     *         {@code this} object.
      */
     public GCalendar changeTimeZoneOnly(TimeZone timeZone)
     {
@@ -1476,5 +1612,30 @@ public class GCalendar extends GregorianCalendar
         setInternal(year, month, dayOfMonth, hourOfDay, minute, second, millisecond);
 
         return this;
+    }
+
+
+    /**
+     * Change the time zone, but preserve the values of year, month
+     * dayOfMonth, hourOfDay, minute, second and millisecond.
+     *
+     * <p>
+     * This method is an alias of {@link #changeTimeZoneOnly(TimeZone)
+     * changeTimeZoneOnly}{@code (TimeZone.getTimeZone(timeZone))}.
+     * </p>
+     *
+     * @param timeZone
+     *         String expression of a time zone.
+     *
+     * @return
+     *         {@code this} object.
+     *
+     * @since 1.1
+     */
+    public GCalendar changeTimeZoneOnly(String timeZone)
+    {
+        TimeZone tz = TimeZone.getTimeZone(timeZone);
+
+        return changeTimeZoneOnly(tz);
     }
 }
