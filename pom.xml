@@ -97,6 +97,13 @@
                     <fork>true</fork>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <configuration>
+                    <additionalJOption>-J-Duser.language=en</additionalJOption>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 </project>
