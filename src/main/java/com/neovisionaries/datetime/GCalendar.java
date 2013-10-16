@@ -501,7 +501,7 @@ public class GCalendar extends GregorianCalendar
      */
     public GCalendar setDstOffset(int dstOffset)
     {
-        set(DST_OFFSET, DST_OFFSET);
+        set(DST_OFFSET, dstOffset);
 
         return this;
     }
@@ -516,7 +516,7 @@ public class GCalendar extends GregorianCalendar
      */
     public GCalendar addDstOffset(int dstOffset)
     {
-        add(DST_OFFSET, DST_OFFSET);
+        add(DST_OFFSET, dstOffset);
 
         return this;
     }
@@ -531,7 +531,7 @@ public class GCalendar extends GregorianCalendar
      */
     public GCalendar rollDstOffset(int dstOffset)
     {
-        roll(DST_OFFSET, DST_OFFSET);
+        roll(DST_OFFSET, dstOffset);
 
         return this;
     }
