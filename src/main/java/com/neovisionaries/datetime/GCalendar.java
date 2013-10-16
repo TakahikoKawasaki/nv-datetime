@@ -53,6 +53,12 @@ import java.util.TimeZone;
 @SuppressWarnings("serial")
 public class GCalendar extends GregorianCalendar
 {
+    /**
+     * ISO 8601 extended format ({@code "yyyy-MM-dd'T'HH:mm:ssZ"}).
+     */
+    public static final String ISO8601_EXTENDED_FORMAT = "yyyy-MM-dd'T'HH:mm:ssZ";
+
+
     public GCalendar()
     {
         super();
@@ -1637,5 +1643,30 @@ public class GCalendar extends GregorianCalendar
         TimeZone tz = TimeZone.getTimeZone(timeZone);
 
         return changeTimeZoneOnly(tz);
+    }
+
+
+    /**
+     * Format <code>this</code> calendar object using ISO 8601 extended format
+     * (<code><i>yyyy</i>-<i>MM</i>-<i>dd</i>T<i>HH</i>:<i>mm</i>:<i>ssZ</i>,
+     * where <code><i>Z</i></code> is <code>[+-]<i>HH</i>:<i>mm</i></code>).
+     * The implementation does the following.
+     *
+     * <style type="text/css">
+     * span.keyword { color: purple; font-weight: bold; }
+     * span.comment { color: green; }
+     * span.string  { color: blue; }
+     * pre.code { background-color: #EEEEEE; margin-left: 2em; margin-right: 2em; border: 1px solid black; }
+     * </style>
+     *
+     * <pre class="code">
+     *
+     * <span class="keyword">return</span> {@link #format(String)
+     * format}({@link #ISO8601_EXTENDED_FORMAT});
+     * </pre>
+     */
+    public String toISO8601()
+    {
+        return format(ISO8601_EXTENDED_FORMAT);
     }
 }
