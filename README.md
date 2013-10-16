@@ -42,7 +42,7 @@ Maven
     <dependency>
         <groupId>com.neovisionaries</groupId>
         <artifactId>nv-datetime</artifactId>
-        <version>1.1</version>
+        <version>1.2</version>
     </depenency>
 
 

@@ -1664,6 +1664,8 @@ public class GCalendar extends GregorianCalendar
      * <span class="keyword">return</span> {@link #format(String)
      * format}({@link #ISO8601_EXTENDED_FORMAT});
      * </pre>
+     *
+     * @since 1.2
      */
     public String toISO8601()
     {
