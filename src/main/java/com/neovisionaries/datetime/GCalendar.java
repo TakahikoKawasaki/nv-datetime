@@ -53,12 +53,6 @@ import java.util.TimeZone;
 @SuppressWarnings("serial")
 public class GCalendar extends GregorianCalendar
 {
-    /**
-     * ISO 8601 extended format ({@code "yyyy-MM-dd'T'HH:mm:ssZ"}).
-     */
-    public static final String ISO8601_EXTENDED_FORMAT = "yyyy-MM-dd'T'HH:mm:ssZ";
-
-
     public GCalendar()
     {
         super();
@@ -1208,14 +1202,29 @@ public class GCalendar extends GregorianCalendar
      *
      * <pre class="code">
      *
+     * {@link DateFormat} df = <span class="keyword">new</span> {@link
+     * SimpleDateFormat#SimpleDateFormat(String) SimpleDateFormat}(format);
+     *
+     * df.{@link DateFormat#setTimeZone(TimeZone) setTimeZone}(calendar.{@link
+     * Calendar#getTimeZone() getTimeZone()});
+     *
      * <span class="keyword">return</span> {@link #format(DateFormat, Calendar)
-     * format}(<span class="keyword">new</span> {@link
-     * SimpleDateFormat#SimpleDateFormat(String) SimpleDateFormat}(format), calendar);
+     * format}(df, calendar);
      * </pre>
      */
     public static String format(String format, Calendar calendar)
     {
-        return format(new SimpleDateFormat(format), calendar);
+        return format(createDateFormat(format, calendar), calendar);
+    }
+
+
+    private static DateFormat createDateFormat(String format, Calendar calendar)
+    {
+        DateFormat df = new SimpleDateFormat(format);
+
+        df.setTimeZone(calendar.getTimeZone());
+
+        return df;
     }
 
 
@@ -1299,14 +1308,19 @@ public class GCalendar extends GregorianCalendar
      *
      * <pre class="code">
      *
+     * {@link DateFormat} df = <span class="keyword">new</span> {@link
+     * SimpleDateFormat#SimpleDateFormat(String) SimpleDateFormat}(format);
+     *
+     * df.{@link DateFormat#setTimeZone(TimeZone) setTimeZone}(calendar.{@link
+     * Calendar#getTimeZone() getTimeZone()});
+     *
      * <span class="keyword">return</span> {@link #format(DateFormat, Calendar, StringBuffer, FieldPosition)
-     * format}(<span class="keyword">new</span> {@link SimpleDateFormat#SimpleDateFormat(String)
-     * SimpleDateFormat}(format), calendar, toAppendTo, position);
+     * format}(df, calendar, toAppendTo, position);
      * </pre>
      */
     public static StringBuffer format(String format, Calendar calendar, StringBuffer toAppendTo, FieldPosition position)
     {
-        return format(new SimpleDateFormat(format), calendar, toAppendTo, position);
+        return format(createDateFormat(format, calendar), calendar, toAppendTo, position);
     }
 
 
@@ -1539,7 +1553,7 @@ public class GCalendar extends GregorianCalendar
      * </style>
      *
      * <pre class="code">
-     * 
+     *
      * <span class="keyword">import</span> java.util.TimeZone;
      * <span class="keyword">import</span> com.neovisionaries.datetime.GCalendar;
      *
@@ -1647,10 +1661,12 @@ public class GCalendar extends GregorianCalendar
 
 
     /**
-     * Format <code>this</code> calendar object using ISO 8601 extended format
+     * Format <code>this</code> calendar object using
+     * <a href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601</a> extended format
      * (<code><i>yyyy</i>-<i>MM</i>-<i>dd</i>T<i>HH</i>:<i>mm</i>:<i>ssZ</i>,
      * where <code><i>Z</i></code> is <code>[+-]<i>HH</i>:<i>mm</i></code>).
-     * The implementation does the following.
+     * This format complies with <a href="http://www.w3.org/TR/xmlschema-2/#dateTime"
+     * >XMLSchema dateTime format</a>, too.
      *
      * <style type="text/css">
      * span.keyword { color: purple; font-weight: bold; }
@@ -1661,14 +1677,25 @@ public class GCalendar extends GregorianCalendar
      *
      * <pre class="code">
      *
-     * <span class="keyword">return</span> {@link #format(String)
-     * format}({@link #ISO8601_EXTENDED_FORMAT});
+     * {@link TimeZone} tz = TimeZone.{@link TimeZone#getTimeZone(String) getTimeZone}(<span class="string">"JST"</span>);
+     * GCalendar cal = new GCalendar(tz, 1974, {@link Calendar}.{@link Calendar#MAY MAY}, 6, 12, 34, 56, 0);
+     *
+     * <span class="comment">// This prints "1974-05-06T12:34:56+09:00".</span>
+     * System.out.println( cal.toISO8601() );
      * </pre>
      *
      * @since 1.2
+     * @see <a href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601</a>
+     * @see <a href="http://www.w3.org/TR/xmlschema-2/#dateTime">XMLSchema dateTime format</a>
      */
     public String toISO8601()
     {
-        return format(ISO8601_EXTENDED_FORMAT);
+        StringBuilder sb = new StringBuilder(format("yyyy-MM-dd'T'HH:mm:ssZ", this));
+
+        // Convert the time zone part from "HHMM" to "HH:MM".
+        // 22 = "1974-05-06T12:34:56+09".length()
+        sb.insert(22, ":");
+
+        return sb.toString();
     }
 }
